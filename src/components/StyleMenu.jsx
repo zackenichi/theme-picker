@@ -34,7 +34,7 @@ const StyleMenu = ({
   //   { value: 24, label: '24' },
   // ];
 
-  const headings = { color: 'black' };
+  const headings = { color: 'black', fontSize: '16px' };
   const settings = { cursor: 'pointer' };
 
   const handleTitleColorChange = (event) => {
@@ -172,7 +172,9 @@ const StyleMenu = ({
         </IconButton>
       </MenuItem>
 
-      <Button onClick={onResetStyles}>Reset</Button>
+      <Button onClick={onResetStyles} sx={{ fontSize: '16px' }}>
+        Reset
+      </Button>
     </Menu>
   );
 };
